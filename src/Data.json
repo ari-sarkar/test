@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Image One",
+    "url": "image_one",
+    "route": "/"
+  },
+  {
+    "id": "2",
+    "name": "Image Two",
+    "url": "image_two",
+    "route": "/image_two"
+  },
+  {
+    "id": "3",
+    "name": "Image Three",
+    "url": "image_three",
+    "route": "/image_three"
+  },
+  {
+    "id": "4",
+    "name": "Image Four",
+    "url": "image_four",
+    "route": "/image_four"
+  }
+]
