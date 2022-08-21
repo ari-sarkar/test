@@ -16,8 +16,8 @@ const ImageCard = ({ name, url }) => {
   };
 
   return (
-    <>
-      <div id="loader" style={{ display: loading ? "block" : "none" }}>
+    <div>
+      <div id="loader" style={{ display: loading ? "block" : "none"}}>
         <div className="spinner">
           <img src="loader2.gif" alt="loading..."></img>
         </div>
@@ -29,7 +29,7 @@ const ImageCard = ({ name, url }) => {
           <img onLoad={imageLoaded} alt={name} src={`${url}.jpg`} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
