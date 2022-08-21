@@ -2,25 +2,25 @@
   {
     "id": "1",
     "name": "Image One",
-    "url": "image_one",
+    "url": "image-one",
     "route": "/"
   },
   {
     "id": "2",
     "name": "Image Two",
-    "url": "image_two",
+    "url": "image-two",
     "route": "/image_two"
   },
   {
     "id": "3",
     "name": "Image Three",
-    "url": "image_three",
+    "url": "image-three",
     "route": "/image_three"
   },
   {
     "id": "4",
     "name": "Image Four",
-    "url": "image_four",
+    "url": "image-four",
     "route": "/image_four"
   }
 ]

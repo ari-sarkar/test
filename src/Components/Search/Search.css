@@ -27,9 +27,10 @@ input {
     width: 25px;
     height: 25px;
     margin-right: 10px;
+    display: none;
 }
 
-.autocomplete_container{
+.autocomplete_container {
     width: 290px;
     background-color: rgb(248, 246, 246);
     border-bottom-left-radius: 4px;
@@ -41,7 +42,8 @@ input {
     top: 60px;
     left: 10px;
 }
-.autocomplete_container a{
+
+.autocomplete_container a {
     list-style: none;
     margin-top: 15px;
     width: 100%;
@@ -54,6 +56,6 @@ input {
 
 }
 
-.hide_autocomplete{
+.hide_autocomplete {
     display: none;
 }

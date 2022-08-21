@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -25,12 +27,11 @@ header {
 .item_container .item {
   text-decoration: none;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: rgb(238, 236, 236);
   margin-right: 20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
   text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
 }
 
 .pagination_container {
@@ -44,6 +45,7 @@ header {
   transform: translate(-20px, -50%);
   width: 55px;
 }
+
 .pagination_container .pagination {
   text-decoration: none;
   background-color: #ffffff;
@@ -51,4 +53,45 @@ header {
   color: rgb(255, 255, 255);
   border-radius: 2px;
 
+}
+
+@media only screen and (min-width: 360px) {
+
+  /* For mobile: */
+  header {
+    flex-direction: column;
+  }
+
+  .item_container {
+    height: 60px;
+  }
+
+  .item_container .item {
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* For tablets: */
+  header {
+    flex-direction: row;
+  }
+
+  .item_container .item {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For tablets: */
+  header {
+    flex-direction: row;
+  }
+
+  .item_container .item {
+    font-size: 18px;
+  }
 }

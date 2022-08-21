@@ -1,11 +1,12 @@
 import React from "react";
 import "./ImageCard.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ImageCard = props => {
+const ImageCard = ({ name, url }) => {
   return (
     <div className="image_container">
-      <p>This is Carousel {props.name}</p>
-      <img src={`${props.url}.jpg`} alt={props.name}></img>
+      <p>This is Carousel {name}</p>
+      <LazyLoadImage alt={name} src={`${url}.jpg`} />
     </div>
   );
 };
