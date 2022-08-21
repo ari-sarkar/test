@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ImageCard.css";
+import { useLocation } from "react-router-dom";
 
 const ImageCard = ({ name, url }) => {
   const [loading, setLoading] = useState(true);
+  let location = useLocation();
+
+  useEffect(() => {
+    setLoading(true);
+  }, [location]);
 
   const imageLoaded = () => {
     setLoading(false);
+    console.log(loading);
   };
+
   return (
     <>
       <div id="loader" style={{ display: loading ? "block" : "none" }}>
         <div className="spinner">
-          <div className="nb-spinner"></div>
+          <img src="loader2.gif" alt="loading..."></img>
         </div>
       </div>
 
